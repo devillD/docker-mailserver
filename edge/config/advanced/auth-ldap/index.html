@@ -9,14 +9,13 @@
         <meta name="description" content="A fullstack but simple mail-server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) using Docker.">
       
       
-      
         <meta name="author" content="docker-mailserver (Github Organization)">
       
       
         <link rel="canonical" href="https://docker-mailserver.github.io/docker-mailserver/edge/config/advanced/auth-ldap/">
       
       <link rel="icon" href="../../../assets/logo/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
@@ -24,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.92558b1b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -37,16 +36,15 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../../../assets/css/customizations.css">
     
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-
 
     
     
@@ -63,9 +61,8 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -82,7 +79,16 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="Docker Mailserver" class="md-header__button md-logo" aria-label="Docker Mailserver" data-md-component="logo">
       
@@ -136,8 +142,7 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -169,11 +174,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/docker-mailserver/docker-mailserver/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/docker-mailserver/docker-mailserver/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     docker-mailserver
@@ -182,6 +186,7 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -189,6 +194,7 @@
       
         
           
+            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -313,6 +319,7 @@
     </ul>
   </div>
 </nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -339,11 +346,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/docker-mailserver/docker-mailserver/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/docker-mailserver/docker-mailserver/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     docker-mailserver
@@ -398,10 +404,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
-      <label class="md-nav__link" for="__nav_3">
-        Configuration
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Configuration" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
@@ -410,6 +420,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -420,8 +431,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -432,8 +445,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -443,10 +458,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
       
-      <label class="md-nav__link" for="__nav_3_3">
-        User Management
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          User Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="User Management" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
@@ -455,6 +474,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -465,8 +485,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -477,14 +499,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -494,10 +519,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" data-md-state="indeterminate" type="checkbox" id="__nav_3_4" checked>
       
-      <label class="md-nav__link" for="__nav_3_4">
-        Best Practices
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Best Practices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Best Practices" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
@@ -506,6 +535,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -516,8 +546,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -528,8 +560,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -540,8 +574,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -552,14 +588,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -569,10 +608,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" data-md-state="indeterminate" type="checkbox" id="__nav_3_5" checked>
       
-      <label class="md-nav__link" for="__nav_3_5">
-        Security
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Security
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Security" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
@@ -581,6 +624,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -591,8 +635,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -603,8 +649,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -615,8 +663,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -627,14 +677,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -644,10 +697,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" data-md-state="indeterminate" type="checkbox" id="__nav_3_6" checked>
       
-      <label class="md-nav__link" for="__nav_3_6">
-        Troubleshooting
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          Troubleshooting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Troubleshooting" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
@@ -656,6 +713,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -666,14 +724,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -684,8 +745,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -697,10 +760,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" checked>
       
-      <label class="md-nav__link" for="__nav_3_8">
-        Advanced Configuration
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8">
+          Advanced Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Advanced Configuration" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_8">
           <span class="md-nav__icon md-icon"></span>
@@ -709,6 +776,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -719,8 +787,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -730,10 +800,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8_2" data-md-state="indeterminate" type="checkbox" id="__nav_3_8_2" checked>
       
-      <label class="md-nav__link" for="__nav_3_8_2">
-        Maintenance
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8_2">
+          Maintenance
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Maintenance" data-md-level="3">
         <label class="md-nav__title" for="__nav_3_8_2">
           <span class="md-nav__icon md-icon"></span>
@@ -742,6 +816,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -752,14 +827,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -769,10 +847,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_8_3" checked>
       
-      <label class="md-nav__link" for="__nav_3_8_3">
-        Override the Default Configs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8_3">
+          Override the Default Configs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Override the Default Configs" data-md-level="3">
         <label class="md-nav__title" for="__nav_3_8_3">
           <span class="md-nav__icon md-icon"></span>
@@ -781,6 +863,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -791,8 +874,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -803,8 +888,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -815,14 +902,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -844,6 +934,7 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -911,6 +1002,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#active-directory-configurations-tested-with-samba4-ad-implementation" class="md-nav__link">
+    Active Directory Configurations (Tested with Samba4 AD Implementation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ldap-setup-examples" class="md-nav__link">
     LDAP Setup Examples
   </a>
@@ -924,8 +1022,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -936,8 +1036,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -948,8 +1050,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -959,10 +1063,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8_7" data-md-state="indeterminate" type="checkbox" id="__nav_3_8_7" checked>
       
-      <label class="md-nav__link" for="__nav_3_8_7">
-        Email Forwarding
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8_7">
+          Email Forwarding
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Email Forwarding" data-md-level="3">
         <label class="md-nav__title" for="__nav_3_8_7">
           <span class="md-nav__icon md-icon"></span>
@@ -971,6 +1079,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -981,8 +1090,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -993,14 +1104,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1011,8 +1125,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1023,8 +1139,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1035,8 +1153,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1047,12 +1167,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1073,10 +1195,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
-      <label class="md-nav__link" for="__nav_4">
-        Examples
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Examples" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -1085,6 +1211,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1094,10 +1221,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" data-md-state="indeterminate" type="checkbox" id="__nav_4_1" checked>
       
-      <label class="md-nav__link" for="__nav_4_1">
-        Tutorials
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Tutorials" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_1">
           <span class="md-nav__icon md-icon"></span>
@@ -1106,6 +1237,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1116,20 +1248,38 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../../../examples/tutorials/mailserver-behind-proxy/" class="md-nav__link">
-        Mail-Server behind a Proxy
+        Mailserver behind Proxy
       </a>
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/tutorials/docker-build/" class="md-nav__link">
+        Building your own Docker image
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1140,14 +1290,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1157,10 +1310,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" data-md-state="indeterminate" type="checkbox" id="__nav_4_2" checked>
       
-      <label class="md-nav__link" for="__nav_4_2">
-        Use Cases
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          Use Cases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Use Cases" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_2">
           <span class="md-nav__icon md-icon"></span>
@@ -1169,34 +1326,39 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/uses-cases/forward-only-mailserver-with-ldap-authentication/" class="md-nav__link">
+      <a href="../../../examples/use-cases/forward-only-mailserver-with-ldap-authentication/" class="md-nav__link">
         Forward-Only Mail-Server with LDAP
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/uses-cases/imap-folders/" class="md-nav__link">
+      <a href="../../../examples/use-cases/imap-folders/" class="md-nav__link">
         Customize IMAP Folders
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1232,10 +1394,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
       
-      <label class="md-nav__link" for="__nav_6">
-        Contributing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Contributing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Contributing" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1244,6 +1410,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1254,8 +1421,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1266,8 +1435,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1278,8 +1449,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1290,6 +1463,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1339,6 +1513,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1406,6 +1581,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#active-directory-configurations-tested-with-samba4-ad-implementation" class="md-nav__link">
+    Active Directory Configurations (Tested with Samba4 AD Implementation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ldap-setup-examples" class="md-nav__link">
     LDAP Setup Examples
   </a>
@@ -1424,14 +1606,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/docker-mailserver/docker-mailserver/edit/master/docs/content/config/advanced/auth-ldap.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                  <h1>LDAP Authentication</h1>
-                
-                <h2 id="introduction"><a class="toclink" href="#introduction">Introduction</a></h2>
+<a href="https://github.com/docker-mailserver/docker-mailserver/edit/master/docs/content/config/advanced/auth-ldap.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+
+  <h1>LDAP Authentication</h1>
+
+<h2 id="introduction"><a class="toclink" href="#introduction">Introduction</a></h2>
 <p>Getting started with ldap and <code>docker-mailserver</code> we need to take 3 parts in account:</p>
 <ul>
 <li><code>postfix</code> for incoming &amp; outgoing email</li>
@@ -1447,7 +1630,7 @@
 <li>...for incoming email, the inboxes which receive the email are chosen by the <code>USER</code>, <code>ALIAS</code> and <code>GROUP</code> filters.<ul>
 <li>The <code>USER</code> filter specifies personal mailboxes, for which only one should exist per address, for example <code>(mail=%s)</code> (also see <a href="http://www.postfix.org/postconf.5.html#virtual_mailbox_maps"><code>virtual_mailbox_maps</code></a>)</li>
 <li>The <code>ALIAS</code> filter specifies aliases for mailboxes, using <a href="http://www.postfix.org/postconf.5.html#virtual_alias_maps"><code>virtual_alias_maps</code></a>, for example <code>(mailAlias=%s)</code></li>
-<li>The <code>GROUP</code> filter specifies the personal mailboxes in a group (for emails that multiple people shall receive), using <a href="http://www.postfix.org/postconf.5.html#virtual_alias_maps"><code>virtual_alias_maps</code></a>, for example <code>(mailGroupMember=%s)</code></li>
+<li>The <code>GROUP</code> filter specifies the personal mailboxes in a group (for emails that multiple people shall receive), using <a href="http://www.postfix.org/postconf.5.html#virtual_alias_maps"><code>virtual_alias_maps</code></a>, for example <code>(mailGroupMember=%s)</code>.</li>
 <li>Technically, there is no difference between <code>ALIAS</code> and <code>GROUP</code>, but ideally you should use <code>ALIAS</code> for personal aliases for a singular person (like <code>ceo@example.org</code>) and <code>GROUP</code> for multiple people (like <code>hr@example.org</code>).</li>
 </ul>
 </li>
@@ -1458,19 +1641,21 @@
 </ul>
 </li>
 </ul>
-<details class="example" open="open"><summary>Example</summary><p>A really simple <code>LDAP_QUERY_FILTER</code> configuration, using only the <em>user filter</em> and allowing only <code>admin@*</code> to spoof any sender addresses.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_LDAP=1</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_SERVER_HOST=ldap.example.org</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_SEARCH_BASE=dc=example,dc=org&quot;</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_DN=cn=admin,dc=example,dc=org</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_PW=mypassword</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SPOOF_PROTECTION=1</span>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>A really simple <code>LDAP_QUERY_FILTER</code> configuration, using only the <em>user filter</em> and allowing only <code>admin@*</code> to spoof any sender addresses.</p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_LDAP=1</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_SERVER_HOST=ldap.example.org</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_SEARCH_BASE=dc=example,dc=org&quot;</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_DN=cn=admin,dc=example,dc=org</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_PW=mypassword</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SPOOF_PROTECTION=1</span><span class="w"></span>
 
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_DOMAIN=(mail=*@%s)</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_USER=(mail=%s)</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_ALIAS=(|)</span> <span class="c1"># doesn&#39;t match anything</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_GROUP=(|)</span> <span class="c1"># doesn&#39;t match anything</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_SENDERS=(|(mail=%s)(mail=admin@*))</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_DOMAIN=(mail=*@%s)</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_USER=(mail=%s)</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_ALIAS=(|)</span><span class="w"> </span><span class="c1"># doesn&#39;t match anything</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_GROUP=(|)</span><span class="w"> </span><span class="c1"># doesn&#39;t match anything</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_SENDERS=(|(mail=%s)(mail=admin@*))</span><span class="w"></span>
 </code></pre></div>
 </details>
 <h3 id="dovecot__filter-dovecot__attrs"><a class="toclink" href="#dovecot__filter-dovecot__attrs"><code>DOVECOT_*_FILTER</code> &amp; <code>DOVECOT_*_ATTRS</code></a></h3>
@@ -1481,179 +1666,230 @@
 <li><code>DOVECOT_PASS_FILTER</code> is used to get the password information of the user, and is in pretty much all cases identical to <code>DOVECOT_USER_FILTER</code> (which is the default behaviour if left away).</li>
 </ul>
 <p>If your directory doesn't have the <a href="https://github.com/variablenix/ldap-mail-schema/blob/master/postfix-book.schema">postfix-book schema</a> installed, then you must change the internal attribute handling for dovecot. For this you have to change the <code>pass_attr</code> and the <code>user_attr</code> mapping, as shown in the example below:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_PASS_ATTRS=&lt;YOUR_USER_IDENTIFIER_ATTRIBUTE&gt;=user,&lt;YOUR_USER_PASSWORD_ATTRIBUTE&gt;=password</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_ATTRS=&lt;YOUR_USER_HOME_DIRECTORY_ATTRIBUTE&gt;=home,&lt;YOUR_USER_MAILSTORE_ATTRIBUTE&gt;=mail,&lt;YOUR_USER_MAIL_UID_ATTRIBUTE&gt;=uid,&lt;YOUR_USER_MAIL_GID_ATTRIBUTE&gt;=gid</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_PASS_ATTRS=&lt;YOUR_USER_IDENTIFIER_ATTRIBUTE&gt;=user,&lt;YOUR_USER_PASSWORD_ATTRIBUTE&gt;=password</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_ATTRS=&lt;YOUR_USER_HOME_DIRECTORY_ATTRIBUTE&gt;=home,&lt;YOUR_USER_MAILSTORE_ATTRIBUTE&gt;=mail,&lt;YOUR_USER_MAIL_UID_ATTRIBUTE&gt;=uid,&lt;YOUR_USER_MAIL_GID_ATTRIBUTE&gt;=gid</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For <code>DOVECOT_*_ATTRS</code>, you can replace <code>ldapAttr=dovecotAttr</code> with <code>=dovecotAttr=%{ldap:ldapAttr}</code> for more flexibility, like for example <code>=home=/var/mail/%{ldap:uid}</code> or just <code>=uid=5000</code>.</p>
 <p>A list of dovecot attributes can be found <a href="https://doc.dovecot.org/configuration_manual/authentication/user_databases_userdb/#authentication-user-database">in the dovecot documentation</a>.</p>
 </div>
-<details class="example" open="open"><summary>Defaults</summary><div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_ATTRS=mailHomeDirectory=home,mailUidNumber=uid,mailGidNumber=gid,mailStorageDirectory=mail</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_PASS_ATTRS=uniqueIdentifier=user,userPassword=password</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_FILTER=(&amp;(objectClass=PostfixBookMailAccount)(uniqueIdentifier=%n))</span>
+<details class="example" open="open">
+<summary>Defaults</summary>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_ATTRS=mailHomeDirectory=home,mailUidNumber=uid,mailGidNumber=gid,mailStorageDirectory=mail</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_PASS_ATTRS=uniqueIdentifier=user,userPassword=password</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_FILTER=(&amp;(objectClass=PostfixBookMailAccount)(uniqueIdentifier=%n))</span><span class="w"></span>
 </code></pre></div>
 </details>
-<details class="example" open="open"><summary>Example</summary><p>Setup for a directory that has the <a href="https://github.com/amery/qmail/blob/master/qmail.schema">qmail-schema</a> installed and uses <code>uid</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_PASS_ATTRS=uid=user,userPassword=password</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_ATTRS=homeDirectory=home,qmailUID=uid,qmailGID=gid,mailMessageStore=mail</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_FILTER=(&amp;(objectClass=qmailUser)(uid=%u)(accountStatus=active))</span>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>Setup for a directory that has the <a href="https://github.com/amery/qmail/blob/master/qmail.schema">qmail-schema</a> installed and uses <code>uid</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_PASS_ATTRS=uid=user,userPassword=password</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_ATTRS=homeDirectory=home,qmailUID=uid,qmailGID=gid,mailMessageStore=mail</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_FILTER=(&amp;(objectClass=qmailUser)(uid=%u)(accountStatus=active))</span><span class="w"></span>
 </code></pre></div>
 </details>
 <p>The LDAP server configuration for dovecot will be taken mostly from postfix, other options can be found in <a href="../../environment/">the environment section in the docs</a>.</p>
 <h3 id="dovecot_auth_bind"><a class="toclink" href="#dovecot_auth_bind"><code>DOVECOT_AUTH_BIND</code></a></h3>
 <p>Set this to <code>yes</code> to enable authentication binds (<a href="https://wiki.dovecot.org/AuthDatabase/LDAP/AuthBinds">more details in the dovecot documentation</a>). Currently, only DN lookup is supported without further changes to the configuration files, so this is only useful when you want to bind as a readonly user without the permission to read passwords.</p>
 <h3 id="saslauthd_ldap_filter"><a class="toclink" href="#saslauthd_ldap_filter"><code>SASLAUTHD_LDAP_FILTER</code></a></h3>
-<p>This filter is used for <code>saslauthd</code>, which is called by postfix when someone is authenticating through SMTP (assuming that <code>SASLAUTHD_MECHANISMS=ldap</code> is being used). Note that you'll need to set up the LDAP server for saslauthd seperately from postfix.</p>
+<p>This filter is used for <code>saslauthd</code>, which is called by postfix when someone is authenticating through SMTP (assuming that <code>SASLAUTHD_MECHANISMS=ldap</code> is being used). Note that you'll need to set up the LDAP server for saslauthd separately from postfix.</p>
 <p>The filter variables are explained in detail <a href="https://github.com/winlibs/cyrus-sasl/blob/master/saslauthd/LDAP_SASLAUTHD#L121">in the <code>LDAP_SASLAUTHD</code> file</a>, but unfortunately, this method doesn't really support domains right now - that means that <code>%U</code> is the only token that makes sense in this variable.</p>
 <div class="admonition note">
 <p class="admonition-title">When to use this and how to avoid it</p>
 <p>Using a separate filter for SMTP authentication allows you to for example allow <code>noreply@example.org</code> to send email, but not log in to IMAP or receive email: <code>(&amp;(mail=%U@example.org)(|(memberOf=cn=email,*)(mail=noreply@example.org)))</code></p>
 <p>If you don't want to use a separate filter for SMTP authentication, you can set <code>SASLAUTHD_MECHANISMS=rimap</code> and <code>SASLAUTHD_MECH_OPTIONS=127.0.0.1</code> to authenticate against dovecot instead - this means that the <code>DOVECOT_USER_FILTER</code> and <code>DOVECOT_PASS_FILTER</code> will be used for SMTP authentication as well.</p>
 </div>
-<details class="example" open="open"><summary>Configure LDAP with <code>saslauthd</code></summary><div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_SASLAUTHD=1</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_MECHANISMS=ldap</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_FILTER=(mail=%U@example.org)</span>
+<details class="example" open="open">
+<summary>Configure LDAP with <code>saslauthd</code></summary>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_SASLAUTHD=1</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_MECHANISMS=ldap</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_FILTER=(mail=%U@example.org)</span><span class="w"></span>
 </code></pre></div>
 </details>
 <h2 id="secure-connection-with-ldaps-or-starttls"><a class="toclink" href="#secure-connection-with-ldaps-or-starttls">Secure Connection with LDAPS or StartTLS</a></h2>
 <p>To enable LDAPS, all you need to do is to add the protocol to <code>LDAP_SERVER_HOST</code>, for example <code>ldaps://example.org:636</code>.</p>
 <p>To enable LDAP over StartTLS (on port 389), you need to set the following environment variables instead (the <strong>protocol must not be <code>ldaps://</code></strong> in this case!):</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_START_TLS=yes</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_TLS=yes</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_START_TLS=yes</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_START_TLS=yes</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_TLS=yes</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_START_TLS=yes</span><span class="w"></span>
+</code></pre></div>
+<h2 id="active-directory-configurations-tested-with-samba4-ad-implementation"><a class="toclink" href="#active-directory-configurations-tested-with-samba4-ad-implementation">Active Directory Configurations (Tested with Samba4 AD Implementation)</a></h2>
+<p>In addition to LDAP explanation above, when Docker Mailserver is intended to be used with Active Directory (or the equivelant implementations like Samba4 AD DC) the following points should be taken into consideration:</p>
+<ul>
+<li>Samba4 Active Directory requires a <strong>secure connection</strong> to the domain controller (DC), either via SSL/TLS (LDAPS) or via StartTLS.</li>
+<li>The username equivalent in Active Directory is: <code>sAMAccountName</code>.</li>
+<li><code>proxyAddresses</code> can be used to store email aliases of single users. The convention is to prefix the email aliases with <code>smtp:</code> (e.g: <code>smtp:some.name@example.com</code>).</li>
+<li>Active Directory is used typically not only as LDAP Directory storage, but also as a <em>domain controller</em>, i.e., it will do many things including authenticating users. Mixing Linux and Windows clients requires the usage of <a href="https://wiki.samba.org/index.php/Administer_Unix_Attributes_in_AD_using_samba-tool_and_ldb-tools">RFC2307 attributes</a>, namely <code>uidNumber</code>, <code>gidNumber</code> instead of the typical <code>uid</code>. Assigning different owner to email folders can also be done in this approach, nevertheless <a href="https://github.com/docker-mailserver/docker-mailserver/pull/2256">there is a bug at the moment in Docker Mailserver that overwrites all permissions</a> when starting the container. Either a manual fix is necessary now, or a temporary workaround to use a hard-coded <code>ldap:uidNumber</code> that equals to <code>5000</code> until this issue is fixed.</li>
+<li>To deliver the emails to different members of Active Directory <strong>Security Group</strong> or <strong>Distribution Group</strong> (similar to mailing lists), use a <a href="../override-defaults/user-patches/"><code>user-patches.sh</code> script</a> to modify <code>ldap-groups.cf</code> so that it includes <code>leaf_result_attribute = mail</code> and <code>special_result_attribute = member</code>. This can be achieved simply by:</li>
+</ul>
+<p>The configuration shown to get the Group to work is from <a href="https://doc.zarafa.com/trunk/Administrator_Manual/en-US/html/_MTAIntegration.html">here</a> and <a href="https://kb.kopano.io/display/WIKI/Postfix">here</a>.</p>
+<div class="highlight"><pre><span></span><code># user-patches.sh
+
+...
+grep -q &#39;^leaf_result_attribute = mail$&#39; /etc/postfix/ldap-groups.cf || echo &quot;leaf_result_attribute = mail&quot; &gt;&gt; /etc/postfix/ldap-groups.cf
+grep -q &#39;^special_result_attribute = member$&#39; /etc/postfix/ldap-groups.cf || echo &quot;special_result_attribute = member&quot; &gt;&gt; /etc/postfix/ldap-groups.cf
+...
+</code></pre></div>
+<ul>
+<li>In <code>/etc/ldap/ldap.conf</code>, if the <code>TLS_REQCERT</code> is <code>demand</code> / <code>hard</code> (default), the CA certificate used to verify the LDAP server certificate must be recognized as a trusted CA. This can be done by volume mounting the <code>ca.crt</code> file and updating the trust store via a <code>user-patches.sh</code> script:</li>
+</ul>
+<div class="highlight"><pre><span></span><code># user-patches.sh
+
+...
+cp /MOUNTED_FOLDER/ca.crt /usr/local/share/ca-certificates/
+update-ca-certificates
+...
+</code></pre></div>
+<p>The changes on the configurations necessary to work with Active Directory (<strong>only changes are listed, the rest of the LDAP configuration can be taken from the other examples</strong> shown in this documentation):</p>
+<div class="highlight"><pre><span></span><code># If StartTLS is the chosen method to establish a secure connection with Active Directory.
+- LDAP_START_TLS=yes
+- SASLAUTHD_LDAP_START_TLS=yes
+- DOVECOT_TLS=yes
+
+- LDAP_QUERY_FILTER_USER=(&amp;(objectclass=person)(mail=%s))
+- LDAP_QUERY_FILTER_ALIAS=(&amp;(objectclass=person)(proxyAddresses=smtp:%s))
+# Filters Active Directory groups (mail lists). Additional changes on ldap-groups.cf are also required as shown above.
+- LDAP_QUERY_FILTER_GROUP=(&amp;(objectClass=group)(mail=%s))
+- LDAP_QUERY_FILTER_DOMAIN=(mail=*@%s)
+# Allows only Domain admins to send any sender email address, otherwise the sender address must match the LDAP attribute `mail`.
+- SPOOF_PROTECTION=1
+- LDAP_QUERY_FILTER_SENDERS=(|(mail=%s)(proxyAddresses=smtp:%s)(memberOf=cn=Domain Admins,cn=Users,dc=*))
+
+- DOVECOT_USER_FILTER=(&amp;(objectclass=person)(sAMAccountName=%n))
+# At the moment to be able to use %{ldap:uidNumber}, a manual bug fix as described above must be used. Otherwise %{ldap:uidNumber} %{ldap:uidNumber} must be replaced by the hard-coded value 5000.
+- DOVECOT_USER_ATTRS==uid=%{ldap:uidNumber},=gid=5000,=home=/var/mail/%Ln,=mail=maildir:~/Maildir
+- DOVECOT_PASS_ATTRS=sAMAccountName=user,userPassword=password
+- SASLAUTHD_LDAP_FILTER=(&amp;(sAMAccountName=%U)(objectClass=person))
 </code></pre></div>
 <h2 id="ldap-setup-examples"><a class="toclink" href="#ldap-setup-examples">LDAP Setup Examples</a></h2>
-<details class="example" open="open"><summary>Basic Setup</summary><div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;3.8&#39;</span>
-<span class="nt">services</span><span class="p">:</span>
-  <span class="nt">mailserver</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">docker.io/mailserver/docker-mailserver:latest</span>
-    <span class="nt">container_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mailserver</span>
-    <span class="nt">hostname</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mail</span>
-    <span class="nt">domainname</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">example.com</span>
+<details class="example" open="open">
+<summary>Basic Setup</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span><span class="w"></span>
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">mailserver</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/mailserver/docker-mailserver:latest</span><span class="w"></span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mailserver</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mail</span><span class="w"></span>
+<span class="w">    </span><span class="nt">domainname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example.com</span><span class="w"></span>
 
-    <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;25:25&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;143:143&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;587:587&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;993:993&quot;</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;25:25&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;143:143&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;587:587&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;993:993&quot;</span><span class="w"></span>
 
-    <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-data/:/var/mail/</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-state/:/var/mail-state/</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-logs/:/var/log/mail/</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/config/:/tmp/docker-mailserver/</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">/etc/localtime:/etc/localtime:ro</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-data/:/var/mail/</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-state/:/var/mail-state/</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-logs/:/var/log/mail/</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/config/:/tmp/docker-mailserver/</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/localtime:/etc/localtime:ro</span><span class="w"></span>
 
-    <span class="nt">environment</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_SPAMASSASSIN=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_CLAMAV=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_FAIL2BAN=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_POSTGREY=1</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_SPAMASSASSIN=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_CLAMAV=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_FAIL2BAN=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_POSTGREY=1</span><span class="w"></span>
 
-      <span class="c1"># &gt;&gt;&gt; Postfix LDAP Integration</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_LDAP=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_SERVER_HOST=ldap.example.org</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_DN=cn=admin,ou=users,dc=example,dc=org</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_PW=mypassword</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_SEARCH_BASE=dc=example,dc=org</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_DOMAIN=(|(mail=*@%s)(mailAlias=*@%s)(mailGroupMember=*@%s))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_USER=(&amp;(objectClass=inetOrgPerson)(mail=%s))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_ALIAS=(&amp;(objectClass=inetOrgPerson)(mailAlias=%s))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_GROUP=(&amp;(objectClass=inetOrgPerson)(mailGroupMember=%s))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_SENDERS=(&amp;(objectClass=inetOrgPerson)(|(mail=%s)(mailAlias=%s)(mailGroupMember=%s)))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SPOOF_PROTECTION=1</span>
-      <span class="c1"># &lt;&lt;&lt; Postfix LDAP Integration</span>
+<span class="w">      </span><span class="c1"># &gt;&gt;&gt; Postfix LDAP Integration</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_LDAP=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_SERVER_HOST=ldap.example.org</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_DN=cn=admin,ou=users,dc=example,dc=org</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_PW=mypassword</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_SEARCH_BASE=dc=example,dc=org</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_DOMAIN=(|(mail=*@%s)(mailAlias=*@%s)(mailGroupMember=*@%s))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_USER=(&amp;(objectClass=inetOrgPerson)(mail=%s))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_ALIAS=(&amp;(objectClass=inetOrgPerson)(mailAlias=%s))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_GROUP=(&amp;(objectClass=inetOrgPerson)(mailGroupMember=%s))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_SENDERS=(&amp;(objectClass=inetOrgPerson)(|(mail=%s)(mailAlias=%s)(mailGroupMember=%s)))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SPOOF_PROTECTION=1</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># &lt;&lt;&lt; Postfix LDAP Integration</span><span class="w"></span>
 
-      <span class="c1"># &gt;&gt;&gt; Dovecot LDAP Integration</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_FILTER=(&amp;(objectClass=inetOrgPerson)(mail=%u))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_PASS_ATTRS=uid=user,userPassword=password</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_ATTRS==home=/var/mail/%{ldap:uid},=mail=maildir:~/Maildir,uidNumber=uid,gidNumber=gid</span>
-      <span class="c1"># &lt;&lt;&lt; Dovecot LDAP Integration</span>
+<span class="w">      </span><span class="c1"># &gt;&gt;&gt; Dovecot LDAP Integration</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_FILTER=(&amp;(objectClass=inetOrgPerson)(mail=%u))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_PASS_ATTRS=uid=user,userPassword=password</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOVECOT_USER_ATTRS==home=/var/mail/%{ldap:uid},=mail=maildir:~/Maildir,uidNumber=uid,gidNumber=gid</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># &lt;&lt;&lt; Dovecot LDAP Integration</span><span class="w"></span>
 
-      <span class="c1"># &gt;&gt;&gt; SASL LDAP Authentication</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_SASLAUTHD=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_MECHANISMS=ldap</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_FILTER=(&amp;(mail=%U@example.org)(objectClass=inetOrgPerson))</span>
-      <span class="c1"># &lt;&lt;&lt; SASL LDAP Authentication</span>
+<span class="w">      </span><span class="c1"># &gt;&gt;&gt; SASL LDAP Authentication</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_SASLAUTHD=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_MECHANISMS=ldap</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_FILTER=(&amp;(mail=%U@example.org)(objectClass=inetOrgPerson))</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># &lt;&lt;&lt; SASL LDAP Authentication</span><span class="w"></span>
 
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ONE_DIR=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DMS_DEBUG=0</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SSL_TYPE=letsencrypt</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PERMIT_DOCKER=host</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ONE_DIR=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DMS_DEBUG=0</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SSL_TYPE=letsencrypt</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PERMIT_DOCKER=host</span><span class="w"></span>
 
-    <span class="nt">cap_add</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">NET_ADMIN</span>
+<span class="w">    </span><span class="nt">cap_add</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NET_ADMIN</span><span class="w"></span>
 </code></pre></div>
 </details>
-<details class="example"><summary>Kopano / Zarafa</summary><div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;3.8&#39;</span>
+<details class="example">
+<summary>Kopano / Zarafa</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span><span class="w"></span>
 
-<span class="nt">services</span><span class="p">:</span>
-  <span class="nt">mailserver</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">docker.io/mailserver/docker-mailserver:latest</span>
-    <span class="nt">container_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mailserver</span>
-    <span class="nt">hostname</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mail</span>
-    <span class="nt">domainname</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">example.com</span>
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">mailserver</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/mailserver/docker-mailserver:latest</span><span class="w"></span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mailserver</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mail</span><span class="w"></span>
+<span class="w">    </span><span class="nt">domainname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example.com</span><span class="w"></span>
 
-    <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;25:25&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;143:143&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;587:587&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;993:993&quot;</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;25:25&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;143:143&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;587:587&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;993:993&quot;</span><span class="w"></span>
 
-    <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-data/:/var/mail/</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-state/:/var/mail-state/</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/config/:/tmp/docker-mailserver/</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-data/:/var/mail/</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/mail-state/:/var/mail-state/</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./docker-data/dms/config/:/tmp/docker-mailserver/</span><span class="w"></span>
 
-    <span class="nt">environment</span><span class="p">:</span>
-      <span class="c1"># We are not using dovecot here</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SMTP_ONLY=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_SPAMASSASSIN=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_CLAMAV=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_FAIL2BAN=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_POSTGREY=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_PASSWD=</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># We are not using dovecot here</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SMTP_ONLY=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_SPAMASSASSIN=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_CLAMAV=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_FAIL2BAN=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_POSTGREY=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_PASSWD=</span><span class="w"></span>
 
-      <span class="c1"># &gt;&gt;&gt; SASL Authentication</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_SASLAUTHD=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_FILTER=(&amp;(sAMAccountName=%U)(objectClass=person))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_MECHANISMS=ldap</span>
-      <span class="c1"># &lt;&lt;&lt; SASL Authentication</span>
+<span class="w">      </span><span class="c1"># &gt;&gt;&gt; SASL Authentication</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_SASLAUTHD=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_FILTER=(&amp;(sAMAccountName=%U)(objectClass=person))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_MECHANISMS=ldap</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># &lt;&lt;&lt; SASL Authentication</span><span class="w"></span>
 
-      <span class="c1"># &gt;&gt;&gt; Postfix Ldap Integration</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_LDAP=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_SERVER_HOST=&lt;yourLdapContainer/yourLdapServer&gt;</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_SEARCH_BASE=dc=mydomain,dc=loc</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_DN=cn=Administrator,cn=Users,dc=mydomain,dc=loc</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_PW=mypassword</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_USER=(&amp;(objectClass=user)(mail=%s))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_GROUP=(&amp;(objectclass=group)(mail=%s))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_ALIAS=(&amp;(objectClass=user)(otherMailbox=%s))</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_DOMAIN=(&amp;(|(mail=*@%s)(mailalias=*@%s)(mailGroupMember=*@%s))(mailEnabled=TRUE))</span>
-      <span class="c1"># &lt;&lt;&lt; Postfix Ldap Integration</span>
+<span class="w">      </span><span class="c1"># &gt;&gt;&gt; Postfix Ldap Integration</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_LDAP=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_SERVER_HOST=&lt;yourLdapContainer/yourLdapServer&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_SEARCH_BASE=dc=mydomain,dc=loc</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_DN=cn=Administrator,cn=Users,dc=mydomain,dc=loc</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_BIND_PW=mypassword</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_USER=(&amp;(objectClass=user)(mail=%s))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_GROUP=(&amp;(objectclass=group)(mail=%s))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_ALIAS=(&amp;(objectClass=user)(otherMailbox=%s))</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LDAP_QUERY_FILTER_DOMAIN=(&amp;(|(mail=*@%s)(mailalias=*@%s)(mailGroupMember=*@%s))(mailEnabled=TRUE))</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># &lt;&lt;&lt; Postfix Ldap Integration</span><span class="w"></span>
 
-      <span class="c1"># &gt;&gt;&gt; Kopano Integration</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ENABLE_POSTFIX_VIRTUAL_TRANSPORT=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">POSTFIX_DAGENT=lmtp:kopano:2003</span>
-      <span class="c1"># &lt;&lt;&lt; Kopano Integration</span>
+<span class="w">      </span><span class="c1"># &gt;&gt;&gt; Kopano Integration</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_POSTFIX_VIRTUAL_TRANSPORT=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTFIX_DAGENT=lmtp:kopano:2003</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># &lt;&lt;&lt; Kopano Integration</span><span class="w"></span>
 
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ONE_DIR=1</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DMS_DEBUG=0</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">SSL_TYPE=letsencrypt</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PERMIT_DOCKER=host</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ONE_DIR=1</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DMS_DEBUG=0</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SSL_TYPE=letsencrypt</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PERMIT_DOCKER=host</span><span class="w"></span>
 
-    <span class="nt">cap_add</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">NET_ADMIN</span>
+<span class="w">    </span><span class="nt">cap_add</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NET_ADMIN</span><span class="w"></span>
 </code></pre></div>
 </details>
-                
-                  
-                
-              
-              
-                
-
 
               
             </article>
@@ -1667,8 +1903,7 @@
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
@@ -1707,18 +1942,19 @@
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            <p>&copy <a href="https://github.com/docker-mailserver"><em>Docker Mailserver Organization</em></a><br/><span>This project is licensed under the MIT license.</span></p>
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <p>&copy <a href="https://github.com/docker-mailserver"><em>Docker Mailserver Organization</em></a><br/><span>This project is licensed under the MIT license.</span></p>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -1728,10 +1964,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.94ec81fe.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.instant", "content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.48dfec6c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8aa65030.min.js"></script>
       
     
   </body>
