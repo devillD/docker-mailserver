@@ -78,9 +78,9 @@ Thanks goes to these wonderful people ✨
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/youtous>
-            <img src=https://avatars.githubusercontent.com/u/1868488?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=youtous/>
+            <img src=https://avatars.githubusercontent.com/u/1868488?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Leo Journel/>
             <br />
-            <sub style="font-size:14px"><b>youtous</b></sub>
+            <sub style="font-size:14px"><b>Leo Journel</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -216,21 +216,14 @@ Thanks goes to these wonderful people ✨
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/danielpanteleit>
-            <img src=https://avatars.githubusercontent.com/u/15816819?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Daniel Panteleit/>
-            <br />
-            <sub style="font-size:14px"><b>Daniel Panteleit</b></sub>
-        </a>
-    </td>
-</tr>
-<tr>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/MichaelSp>
             <img src=https://avatars.githubusercontent.com/u/448282?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Michael/>
             <br />
             <sub style="font-size:14px"><b>Michael</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/mindrunner>
             <img src=https://avatars.githubusercontent.com/u/1413542?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=lukas/>
@@ -266,8 +259,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>vortex852456</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/chris54721>
             <img src=https://avatars.githubusercontent.com/u/3685659?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Christian Grasso/>
@@ -275,6 +266,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Christian Grasso</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/hanscees>
             <img src=https://avatars.githubusercontent.com/u/5273274?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Hans-Cees Speel/>
@@ -310,8 +303,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Luke Cyca</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/okainov>
             <img src=https://avatars.githubusercontent.com/u/918446?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Oleg Kainov/>
@@ -319,6 +310,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Oleg Kainov</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/robertdolca>
             <img src=https://avatars.githubusercontent.com/u/383543?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Robert Dolca/>
@@ -328,16 +321,16 @@ Thanks goes to these wonderful people ✨
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/kiliant>
-            <img src=https://avatars.githubusercontent.com/u/5897310?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Thomas A. Kilian/>
+            <img src=https://avatars.githubusercontent.com/u/5897310?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Thomas Kilian/>
             <br />
-            <sub style="font-size:14px"><b>Thomas A. Kilian</b></sub>
+            <sub style="font-size:14px"><b>Thomas Kilian</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/diiigle>
-            <img src=https://avatars.githubusercontent.com/u/5210911?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Tobias Rittig/>
+            <img src=https://avatars.githubusercontent.com/u/5210911?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Tobias Rittig, Ph.D./>
             <br />
-            <sub style="font-size:14px"><b>Tobias Rittig</b></sub>
+            <sub style="font-size:14px"><b>Tobias Rittig, Ph.D.</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -354,8 +347,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Arne Kepp</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/dennis95stumm>
             <img src=https://avatars.githubusercontent.com/u/6422711?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Dennis Stumm/>
@@ -363,6 +354,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Dennis Stumm</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/moqmar>
             <img src=https://avatars.githubusercontent.com/u/5559994?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Moritz Marquardt/>
@@ -398,8 +391,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Brandon Schmitt</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Starbix>
             <img src=https://avatars.githubusercontent.com/u/12443257?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Cédric Laubacher/>
@@ -407,6 +398,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Cédric Laubacher</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/citec>
             <img src=https://avatars.githubusercontent.com/u/4775008?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=GrupoCITEC/>
@@ -442,8 +435,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Patrizio Bekerle</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Rubytastic2>
             <img src=https://avatars.githubusercontent.com/u/21036612?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Rubytastic2/>
@@ -451,6 +442,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Rubytastic2</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/analogue>
             <img src=https://avatars.githubusercontent.com/u/26757?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Semir Patel/>
@@ -486,8 +479,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>kamuri</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/davidszp>
             <img src=https://avatars.githubusercontent.com/u/15107452?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=davidszp/>
@@ -495,6 +486,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>davidszp</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/andreasgerstmayr>
             <img src=https://avatars.githubusercontent.com/u/538011?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Andreas Gerstmayr/>
@@ -530,8 +523,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Alexander Elbracht</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/aminvakil>
             <img src=https://avatars.githubusercontent.com/u/12948692?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Amin Vakil/>
@@ -539,6 +530,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Amin Vakil</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/andrewlow>
             <img src=https://avatars.githubusercontent.com/u/2952475?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Andrew Low/>
@@ -565,6 +558,13 @@ Thanks goes to these wonderful people ✨
             <img src=https://avatars.githubusercontent.com/u/800119?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Christian Raue/>
             <br />
             <sub style="font-size:14px"><b>Christian Raue</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/danielpanteleit>
+            <img src=https://avatars.githubusercontent.com/u/15816819?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Daniel Panteleit/>
+            <br />
+            <sub style="font-size:14px"><b>Daniel Panteleit</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -613,9 +613,9 @@ Thanks goes to these wonderful people ✨
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/eltociear>
-            <img src=https://avatars.githubusercontent.com/u/22633385?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ikko Ashimine/>
+            <img src=https://avatars.githubusercontent.com/u/22633385?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ikko Eltociear Ashimine/>
             <br />
-            <sub style="font-size:14px"><b>Ikko Ashimine</b></sub>
+            <sub style="font-size:14px"><b>Ikko Eltociear Ashimine</b></sub>
         </a>
     </td>
 </tr>
@@ -710,9 +710,9 @@ Thanks goes to these wonderful people ✨
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/r-pufky>
-            <img src=https://avatars.githubusercontent.com/u/4778046?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=r-pufky/>
+            <img src=https://avatars.githubusercontent.com/u/4778046?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Robert Pufky/>
             <br />
-            <sub style="font-size:14px"><b>r-pufky</b></sub>
+            <sub style="font-size:14px"><b>Robert Pufky</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -782,9 +782,9 @@ Thanks goes to these wonderful people ✨
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/ifokeev>
-            <img src=https://avatars.githubusercontent.com/u/2017148?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ivan Fokeev/>
+            <img src=https://avatars.githubusercontent.com/u/2017148?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Johan Fokeev/>
             <br />
-            <sub style="font-size:14px"><b>Ivan Fokeev</b></sub>
+            <sub style="font-size:14px"><b>Johan Fokeev</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -842,9 +842,9 @@ Thanks goes to these wonderful people ✨
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/ch3sh1r>
-            <img src=https://avatars.githubusercontent.com/u/441777?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Alexey Bednyakov/>
+            <img src=https://avatars.githubusercontent.com/u/441777?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bedniakov Aleksei/>
             <br />
-            <sub style="font-size:14px"><b>Alexey Bednyakov</b></sub>
+            <sub style="font-size:14px"><b>Bedniakov Aleksei</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -957,21 +957,12 @@ Thanks goes to these wonderful people ✨
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/danielsreichenbach>
-            <img src=https://avatars.githubusercontent.com/u/294217?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Daniel S. Reichenbach/>
-            <br />
-            <sub style="font-size:14px"><b>Daniel S. Reichenbach</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/dbellavista>
             <img src=https://avatars.githubusercontent.com/u/1540321?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Daniele Bellavista/>
             <br />
             <sub style="font-size:14px"><b>Daniele Bellavista</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/danielvandenberg95>
             <img src=https://avatars.githubusercontent.com/u/8654023?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Daniël van den Berg/>
@@ -979,13 +970,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Daniël van den Berg</b></sub>
         </a>
     </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/kopax>
-            <img src=https://avatars.githubusercontent.com/u/1866564?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Dimitri KOPRIWA/>
-            <br />
-            <sub style="font-size:14px"><b>Dimitri KOPRIWA</b></sub>
-        </a>
-    </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/mlatorre31>
             <img src=https://avatars.githubusercontent.com/u/5250322?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Dingoz/>
@@ -1009,13 +995,11 @@ Thanks goes to these wonderful people ✨
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/edvorg>
-            <img src=https://avatars.githubusercontent.com/u/1499595?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Eduard Knysh/>
+            <img src=https://avatars.githubusercontent.com/u/1499595?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Eduard Knyshov/>
             <br />
-            <sub style="font-size:14px"><b>Eduard Knysh</b></sub>
+            <sub style="font-size:14px"><b>Eduard Knyshov</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/eliroca>
             <img src=https://avatars.githubusercontent.com/u/42994510?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Elisei Roca/>
@@ -1030,6 +1014,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Erick Calder</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/huncode>
             <img src=https://avatars.githubusercontent.com/u/1650008?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Huncode/>
@@ -1058,8 +1044,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Florian Roks</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/fkefer>
             <img src=https://avatars.githubusercontent.com/u/1140674?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Franz Keferböck/>
@@ -1068,12 +1052,14 @@ Thanks goes to these wonderful people ✨
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/frugan-it>
+        <a href=https://github.com/frugan-dev>
             <img src=https://avatars.githubusercontent.com/u/7957714?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Frugan/>
             <br />
             <sub style="font-size:14px"><b>Frugan</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/glandais>
             <img src=https://avatars.githubusercontent.com/u/864152?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Gabriel Landais/>
@@ -1102,15 +1088,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Harry Youd</b></sub>
         </a>
     </td>
-</tr>
-<tr>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Wohlraj>
-            <img src=https://avatars.githubusercontent.com/u/6720382?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Hugues Granger/>
-            <br />
-            <sub style="font-size:14px"><b>Hugues Granger</b></sub>
-        </a>
-    </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/sirgantrithon>
             <img src=https://avatars.githubusercontent.com/u/3400609?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ian Andrews/>
@@ -1125,11 +1102,13 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Influencer</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/jcalfee>
-            <img src=https://avatars.githubusercontent.com/u/204121?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=James Calfee/>
+            <img src=https://avatars.githubusercontent.com/u/204121?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=jcalfee/>
             <br />
-            <sub style="font-size:14px"><b>James Calfee</b></sub>
+            <sub style="font-size:14px"><b>jcalfee</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -1140,19 +1119,24 @@ Thanks goes to these wonderful people ✨
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/JiLleON>
+            <img src=https://avatars.githubusercontent.com/u/28780165?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=JiLleON/>
+            <br />
+            <sub style="font-size:14px"><b>JiLleON</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/jirislav>
             <img src=https://avatars.githubusercontent.com/u/7583416?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Jiří Kozlovský/>
             <br />
             <sub style="font-size:14px"><b>Jiří Kozlovský</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/jmccl>
-            <img src=https://avatars.githubusercontent.com/u/5283750?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=John McClean/>
+            <img src=https://avatars.githubusercontent.com/u/5283750?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=jmccl/>
             <br />
-            <sub style="font-size:14px"><b>John McClean</b></sub>
+            <sub style="font-size:14px"><b>jmccl</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -1162,18 +1146,20 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Jurek Barth</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/JOduMonT>
-            <img src=https://avatars.githubusercontent.com/u/5204724?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Jonathan Dumont/>
+            <img src=https://avatars.githubusercontent.com/u/5204724?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Jonathan DUMONT/>
             <br />
-            <sub style="font-size:14px"><b>Jonathan Dumont</b></sub>
+            <sub style="font-size:14px"><b>Jonathan DUMONT</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Kaan88>
-            <img src=https://avatars.githubusercontent.com/u/1260152?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Kaan88/>
+            <img src=https://avatars.githubusercontent.com/u/1260152?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Kaan/>
             <br />
-            <sub style="font-size:14px"><b>Kaan88</b></sub>
+            <sub style="font-size:14px"><b>Kaan</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -1190,8 +1176,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>KCrawley</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/khuedoan>
             <img src=https://avatars.githubusercontent.com/u/27996771?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Khue Doan/>
@@ -1206,18 +1190,13 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Lars Pötter</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/LeoWinterDE>
             <img src=https://avatars.githubusercontent.com/u/1300141?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Leo Winter/>
             <br />
             <sub style="font-size:14px"><b>Leo Winter</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Zauberstuhl>
-            <img src=https://avatars.githubusercontent.com/u/652428?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Lukas Matt/>
-            <br />
-            <sub style="font-size:14px"><b>Lukas Matt</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -1234,8 +1213,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Mathieu Brunot</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/maxemann96>
             <img src=https://avatars.githubusercontent.com/u/4399206?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Maximilian Hippler/>
@@ -1257,6 +1234,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Michael Jensen</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/exhuma>
             <img src=https://avatars.githubusercontent.com/u/65717?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Michel Albert/>
@@ -1278,8 +1257,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Mohammed Noureldin</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/mpldr>
             <img src=https://avatars.githubusercontent.com/u/33086936?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Moritz Poldrack/>
@@ -1301,6 +1278,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Nicholas Pepper</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/radicand>
             <img src=https://avatars.githubusercontent.com/u/673843?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Nick Pappas/>
@@ -1322,8 +1301,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Olivier Picquenot</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/OrvilleQ>
             <img src=https://avatars.githubusercontent.com/u/21377465?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Orville Q. Song/>
@@ -1345,6 +1322,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Petar Šegina</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/peter-hartmann>
             <img src=https://avatars.githubusercontent.com/u/20216585?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Peter Hartmann/>
@@ -1366,8 +1345,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Remo E</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/romansey>
             <img src=https://avatars.githubusercontent.com/u/1835713?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Roman Seyffarth/>
@@ -1389,6 +1366,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Scott Weldon</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/klamann>
             <img src=https://avatars.githubusercontent.com/u/1008877?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Sebastian Straub/>
@@ -1410,8 +1389,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Sergey Nazaryev</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/shyim>
             <img src=https://avatars.githubusercontent.com/u/6224096?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Shyim/>
@@ -1433,6 +1410,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Simon Schröter</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/stephan-devop>
             <img src=https://avatars.githubusercontent.com/u/59093905?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Stephan/>
@@ -1454,8 +1433,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Sven Kauber</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/syl20bnr>
             <img src=https://avatars.githubusercontent.com/u/1243537?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Sylvain Benner/>
@@ -1475,6 +1452,15 @@ Thanks goes to these wonderful people ✨
             <img src=https://avatars.githubusercontent.com/u/9599005?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=TechnicLab/>
             <br />
             <sub style="font-size:14px"><b>TechnicLab</b></sub>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/tbutter>
+            <img src=https://avatars.githubusercontent.com/u/1336537?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Thomas Butter/>
+            <br />
+            <sub style="font-size:14px"><b>Thomas Butter</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -1498,8 +1484,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Torben Weibert</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/torus>
             <img src=https://avatars.githubusercontent.com/u/65044?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Toru Hisai/>
@@ -1514,6 +1498,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Trangar</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Twist235>
             <img src=https://avatars.githubusercontent.com/u/98449070?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Twist235/>
@@ -1542,8 +1528,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>Wim</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/arcaine2>
             <img src=https://avatars.githubusercontent.com/u/12737015?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=arcaine2/>
@@ -1558,6 +1542,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>awb99</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/brainkiller>
             <img src=https://avatars.githubusercontent.com/u/1619562?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=brainkiller/>
@@ -1586,8 +1572,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>dimalo</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/eleith>
             <img src=https://avatars.githubusercontent.com/u/284832?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=eleith/>
@@ -1602,6 +1586,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>helmutundarnold</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/hnws>
             <img src=https://avatars.githubusercontent.com/u/668137?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=hnws/>
@@ -1630,8 +1616,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>jjtt</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/paralax>
             <img src=https://avatars.githubusercontent.com/u/5619153?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=jose nazario/>
@@ -1646,6 +1630,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>landergate</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/callmemagnus>
             <img src=https://avatars.githubusercontent.com/u/232478?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=magnus anderssen/>
@@ -1674,8 +1660,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>mchamplain</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/millerjason>
             <img src=https://avatars.githubusercontent.com/u/7610974?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Jason Miller/>
@@ -1690,6 +1674,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>mplx</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/odinis>
             <img src=https://avatars.githubusercontent.com/u/23659698?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=odinis/>
@@ -1718,8 +1704,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>ontheair81</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/presocratics>
             <img src=https://avatars.githubusercontent.com/u/203116?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=presocratics/>
@@ -1734,6 +1718,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>rhyst</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/schnippl0r>
             <img src=https://avatars.githubusercontent.com/u/58435847?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=schnippl0r/>
@@ -1762,8 +1748,6 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>squash</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/strarsis>
             <img src=https://avatars.githubusercontent.com/u/9271436?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=strarsis/>
@@ -1778,6 +1762,8 @@ Thanks goes to these wonderful people ✨
             <sub style="font-size:14px"><b>tamueller</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/vivacarvajalito>
             <img src=https://avatars.githubusercontent.com/u/1446654?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=vivacarvajalito/>
